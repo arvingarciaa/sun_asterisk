@@ -1,3 +1,24 @@
 .search-bar {
   padding: 1rem 0;
 }
+
+.main-video {
+  height: 35vw;
+  min-height: 17rem !important;
+  max-height: 30rem !important;
+}
+
+.list-video {
+  min-height: 6rem !important;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.placeholder + .list-video-text{
+  vertical-align: top !important;
+  margin: 6px;
+}
+
+ul {
+  padding: 0 !important;
+}
