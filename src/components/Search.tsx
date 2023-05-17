@@ -1,7 +1,14 @@
-import React from 'react'
+import '../styles/style.css'
 
-export const Search = () => {
+interface Props {
+  searchQuery: string;
+  handleSearch: (arg0: string)=>void;
+}
+
+export const Search = ({searchQuery, handleSearch}: Props) => {
   return (
-    <div>Search</div>
+    <div className="search-bar">
+      <input type="text" className="form-control" placeholder="Search..." value={searchQuery} onChange={(e) => handleSearch(e.target.value)}></input>
+    </div>
   )
 }
